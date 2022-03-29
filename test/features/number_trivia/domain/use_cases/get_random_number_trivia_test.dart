@@ -7,6 +7,8 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
+
+
 class MockNumberTriviaRepository extends Mock
     implements NumberTriviaRepository {}
 
@@ -20,7 +22,7 @@ void main() {
   final tNumberTrivia = NumberTrivia(number: 1, text: 'test');
 
   test('should get trivia  from the repository', () async {
-    when(() => mockNumberTriviaRepository.getRandomNumberTrivia())
+    when(() => mockNumberTriviaRepository.getRandomNumberTrivia() )
         .thenAnswer((_) async => Right(tNumberTrivia));
 
     // act
