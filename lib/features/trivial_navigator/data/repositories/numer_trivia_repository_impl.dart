@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:clean_architeture_app/core/error/exceptions.dart';
 import 'package:clean_architeture_app/core/error/failures.dart';
 import 'package:clean_architeture_app/core/network/network_info.dart';
@@ -40,7 +42,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
     if (await networkInfo.isConnected) {
       try {
         final remoteTrivia = await getConcreteOrRandom();
-        localDataSource.cacheNumberTrivia(remoteTrivia);
+        unawaited(localDataSource.cacheNumberTrivia(remoteTrivia));
         return Right(remoteTrivia);
       } on ServerException {
         return Left(ServerFailure());
