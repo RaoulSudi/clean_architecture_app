@@ -1,5 +1,5 @@
-import 'package:clean_architeture_app/presentation/pages/number_trivia_page.dart';
 import 'package:flutter/material.dart';
+import 'features/presentation/pages/number_trivia_page.dart';
 import 'injection_container.dart' as di;
 
 Future<void> main() async {

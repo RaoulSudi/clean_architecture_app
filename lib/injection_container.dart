@@ -5,12 +5,12 @@ import 'package:clean_architeture_app/features/trivial_navigator/data/repositori
 import 'package:clean_architeture_app/features/trivial_navigator/domain/repositories/number_trivia_repository.dart';
 import 'package:clean_architeture_app/features/trivial_navigator/domain/use_cases/get_concrete_number_trivia.dart';
 import 'package:clean_architeture_app/features/trivial_navigator/domain/use_cases/get_random_number_trivia.dart';
-import 'package:clean_architeture_app/presentation/number_trivia_bloc.dart';
 import 'package:data_connection_checker/data_connection_checker.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
+import 'features/presentation/number_trivia_bloc.dart';
 import 'features/trivial_navigator/data/datasources/number_trivia_local_data_source.dart';
 
 final sl = GetIt.instance;

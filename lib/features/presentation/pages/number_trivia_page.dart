@@ -1,9 +1,8 @@
 import 'package:clean_architeture_app/injection_container.dart';
-import 'package:clean_architeture_app/presentation/number_trivia_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../features/trivial_navigator/domain/entities/number_trivia.dart';
+import '../number_trivia_bloc.dart';
 import '../widgets/loading_widget.dart';
 import '../widgets/message_display.dart';
 import '../widgets/trivia_display.dart';

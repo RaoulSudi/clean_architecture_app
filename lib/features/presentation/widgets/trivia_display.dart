@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../features/trivial_navigator/domain/entities/number_trivia.dart';
+import '../../trivial_navigator/domain/entities/number_trivia.dart';
 
 class TriviaDisplay extends StatelessWidget {
   final NumberTrivia numberTrivia;
